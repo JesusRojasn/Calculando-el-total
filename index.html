@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="card">
+        <img class="card-img" src="./assets/css/img/laptop1.jpg" alt="laptop" />
+        <h1 class="title">Laptop Gamer AMD</h1>
+        <form>
+          <div class="formulario">
+            <input
+              type="number"
+              id="cantidad"
+              step="1"
+              value=""
+              placeholder="Cantidad"
+            />
+            <input
+              class="input1"
+              type="text"
+              id="color"
+              value=""
+              placeholder="Color"
+            />
+          </div>
+        </form>
+        <p class="price">Precio: 400000</p>
+        <input type="hidden" id="precio" value="400000" />
+        <button
+          class="btn"
+          onclick="
+        //Capturando los inputs
+        var cantidad = document.querySelector('#cantidad');
+        var color = document.querySelector('#color');
+        
+        //Calculando el total
+        var total = Number(cantidad.value) * 400000;
+
+        //
+        var valorTotal = document.querySelector('#valorTotal');
+        var valorCantidad = document.querySelector('#valorCantidad');
+        var valorColor = document.querySelector('#valorColor');
+        
+        valorTotal.innerHTML = total;
+        valorCantidad.innerHTML = cantidad.value;
+        valorColor.style.backgroundColor = color.value;
+        "
+        >
+          Calcular Total
+        </button>
+      </div>
+      <div class="results">
+        <div class="">
+          Total: $<span class="results-items" id="valorTotal">0</span>
+        </div>
+        <div>
+          Cantidad: <span class="results-items" id="valorCantidad">0</span>
+        </div>
+        <div>
+          Color:
+          <div id="valorColor"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

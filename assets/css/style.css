@@ -1,0 +1,74 @@
+.row {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.card {
+  border: 1 px solid gray;
+  border-radius: 3%;
+  background-color: rgba(122, 161, 55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 1em;
+}
+
+.card-img {
+  width: 60%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.title {
+  color: white;
+  font-size: 0.8em;
+}
+#valorColor {
+  background-color: black;
+  border-radius: 25px;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid white;
+  margin: 10px;
+  display: inline;
+}
+
+.results {
+  display: flex;
+  padding-left: 1em;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.btn {
+  background-color: #ffa723;
+  border-radius: 5px;
+  height: 2em;
+  color: white;
+  border: solid 1px black;
+}
+.price {
+  padding-right: 4em;
+  color: white;
+}
+.formulario {
+  margin-top: 9px;
+}
+#color {
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+}
+#cantidad {
+  border-radius: 5px;
+  border: none;
+}
+.results-items {
+  padding-left: 1px;
+}
